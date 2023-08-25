@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  text-align: right;
+  height: 10rem;
+  font-size: 1.3rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.65);
+  background: url(./images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header h1 {
+  padding-right: 1.3rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+/* to stay clear of the header space + the top marging intended for the description section */
+main {
+  margin-top: 11rem;
+}
+
+a[target='_blank']::after {
+  content: '\f35d';
+  font-family: FontAwesome;
+  margin-left: 0.5rem;
+}
+
+.description,
+.information,
+.contact {
+  margin: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.65);
+}
+
+.product-card p {
+  padding: 0.5rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.65);
+}
+
+.products img {
+  width: 15rem;
+  height: 10rem;
+  padding: 0.5rem;
+}
+
+.products h2 {
+  text-align: center;
+}
+
+th,
+td,
+table {
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+tr:nth-child(odd) td {
+  background-color: lightgray;
+}
+
+table {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+form h4,
+h3 {
+  margin: 0.7rem 0 0.2rem 0;
+}
+
+input,
+textarea,
+.submit-btn {
+  padding: 0.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.65);
+}
+
+.submit-btn {
+  width: 10rem;
+  margin-top: 0.5rem;
+  background: none;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: rgba(128, 128, 128, 0.32);
+  height: 15rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  margin: 0 0.5rem 0 0.5rem;
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  header h1 {
+    padding-right: 7rem;
+  }
+}
